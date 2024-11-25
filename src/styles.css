@@ -1,0 +1,224 @@
+h1 {
+    font-size: 5rem;
+    padding-top: 4rem;
+}
+h2 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #ffffff;
+}
+/* NAV Style */
+
+nav {
+    background-color: rgb(10, 10, 43);
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1rem;
+    transition: all 0.3s ease;
+}
+.navbar-brand:hover {
+    color: #20b50a;  
+}
+.navbar-nav{
+color: #f3f3f3;
+--bs-nav-link-color: none;
+--bs-nav-link-hover-color: none;
+--bs-nav-link-disabled-color: none;
+}
+.navbar-brand {
+    color: rgb(254, 255, 254);
+    margin-left: 1rem;
+    display: flex; 
+    align-items: center; 
+}
+
+.navbar-brand img {
+    margin-right: 0.5rem; 
+}
+
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+
+.nav-link {
+    color: whitesmoke;
+    margin-right: 1rem;
+}
+
+
+.nav-link:hover {
+    color: #20b50a; 
+    text-decoration: none;
+}
+
+
+.nav-link:active {
+    transform: scale(1.15);
+    color: rgb(1, 241, 1);
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(227, 227, 255)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse {
+    left: 0; 
+    width: 100%;
+    background-color: rgb(10, 10, 43); 
+    padding: 1rem;
+    z-index: 1; 
+}
+
+.navbar-collapse .navbar-nav .nav-item {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo del Modal */
+
+.modal {
+    background-color: rgba(16, 16, 37, 0);
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(27, 27, 59);
+}
+
+.modal-content {
+    background-color: rgb(192, 192, 219);
+    border-radius: 8px;
+    padding: 2rem;
+    animation: modalFadeIn 0.4s ease-out, modalSlideIn 0.4s ease-out;
+    transform-origin: center;
+}
+/* Botón "Agregar a Favoritos" (estado predeterminado) */
+.btn-agregar {
+    background-color: #20b50a;
+    color: #fff;
+    border: none;
+    transition: background-color 0.1s ease, transform 0.2s ease;
+}
+
+/* Botón "Eliminar de Favoritos" (estado activo) */
+.btn-eliminar {
+    background-color: #c02d3b;
+    color: #fff;
+    border: none;
+    transition: background-color 0.1s ease, transform 0.2s ease;
+}
+
+
+.btn-favorito:hover,
+.btn-favorito:focus {
+    transform: scale(1.05);
+    outline: none;
+}
+
+
+.btn-favorito:active {
+    transform: scale(0.95);
+}
+
+/* Animación de aparición gradual */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de deslizamiento */
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-body p, strong {
+    color: rgb(27, 27, 59);
+    font-size: 1.2rem;
+}
+
+.modal-body img{
+    max-width: 65%;
+}
+.btn-close {
+    color: rgb(27, 27, 59);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.btn-close:hover {
+    transform: rotate(90deg);
+}
+
+/* ....... */
+
+/*... CARD Style ..*/
+
+
+.col-xl-2-4 {
+    flex: 0  calc(20% - 1rem); /* Espacio adicional por margen */
+    max-width: calc(20% - 1rem);
+}
+
+
+.card {
+    background-color: rgb(227, 227, 255);
+    transform: scale(0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+
+}
+
+.card-body h3 {
+
+    font-size: 1rem;
+}
+.card:hover {
+    transform: scale(1);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(102, 102, 255, 0.7); 
+}
+
+/* Reglas específicas para tablets y celulares */
+@media (max-width: 992px) { 
+    .col-md-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* ...... */
+
+

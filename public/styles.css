@@ -1,0 +1,73 @@
+*{
+    color: white;
+    font-family:  Poppins,Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(27, 27, 59) !important;
+}
+.select-años select {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+.select-años select:hover {
+    border-color: #888;
+    cursor: pointer;
+}
+
+.select-años select:focus {
+    border-color: #444;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.select-años option {
+    color: black;
+    background-color: white;
+}
+
+.select-años {
+    margin-bottom: 1rem;
+}
+label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+#busqueda{
+    padding: 3rem;
+}
+/* Estilo del botón de búsqueda */
+#busqueda .btn {
+    background-color: #28a745; /* Color verde */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 0.5rem 1rem; /* Ajuste de tamaño */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Efecto hover: cambia el color de fondo a un verde más oscuro */
+#busqueda .btn:hover {
+    background-color: #218838; /* Verde oscuro */
+    color: #fff; /* Mantiene el texto blanco */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    transition: transform 0.2s ease; /* Transición suave */
+}
+
+/* Efecto de clic: reduce ligeramente el tamaño */
+#busqueda .btn:active {
+    transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+}
+
+.no-peliculas{
+p {
+    font-size: 1.2rem;
+    color: gray;
+    }
+}
